@@ -1,0 +1,19 @@
+<h1>Cursos</h1>
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Materia</th>
+        <th scope="col">Créditos</th>
+        <th scope="col">Prerequisito</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (curso of cursos; track curso.id) {        
+      <tr>
+        <td>{{curso.materia}}</td>
+        <td>{{curso.creditos}}</td>
+        <td>{{curso.prerrequisitos}}</td>
+      </tr>        
+      }
+    </tbody>
+  </table>
